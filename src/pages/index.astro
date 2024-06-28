@@ -1,16 +1,67 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Container from "../components/Container.astro";
+import Experience from "../components/Experience.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../icons/GitHubIcon.astro";
+import MailIcon from "../icons/MailIcon.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import WorkIcon from "../icons/WorkIcon.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Mi sitio JMH</h1>
-	</body>
-</html>
+<Layout title="Portfolio Javier Mejia - Desarrollador Móvil y Web", description="Contacta a Javier Mejia para cotizar y ver una posible solución a tu empresa.">
+  <main>
+    <Container class="py-28 pb-20">
+      <h1
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+      >
+        <img
+          class="rounded-full size-12"
+          src="/images/javier.jpg"
+          alt="javiermh photo"
+        />
+
+        Hey, soy Javier Mejia
+        <a
+          href="https://www.linkedin.com/in/javier-mejia-751b62231"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+          ><Badge>Disponible para trabajar</Badge></a
+        >
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span class="opacity-80 text-blue-300">
+          Desarrollador Móvil y Web 📱🌐</span
+        > dedicado a la creación de aplicaciones y soluciones para tu empresa. Guanajuato,
+        México, me especializo en desarrollar aplicaciones móviles multiplataforma
+        con Flutter 🚀, así como aplicaciones nativas para <span
+          class="opacity-80 text-green-300"
+        >
+          Android 📲</span
+        > e iOS 🍏.
+      </h2>
+      <nav class="flex gap-x-4 mt-6">
+        <SocialPill href="https://www.linkedin.com/in/javier-mejia-751b62231">
+          <LinkedInIcon class="size-6"/>
+          LinkdIn
+        </SocialPill>
+        <SocialPill href="https://github.com/javiermh20">
+          <GitHubIcon class="size-6"/>
+          GitHub
+        </SocialPill>
+        <SocialPill href="https://github.com/javiermh20">
+          <MailIcon class="size-6"/>
+          javiermejiah20@gmail.com
+        </SocialPill>
+      </nav>
+    </Container>
+
+    <Container id="experience">
+      <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
+        <WorkIcon class="size-7"/> Experiencia laboral</h2>
+      <Experience />
+    </Container>
+  </main>
+</Layout>
