@@ -3,18 +3,23 @@ import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Container from "../components/Container.astro";
 import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import Footer from "../components/Footer.astro";
 import SocialPill from "../components/SocialPill.astro";
 import GitHubIcon from "../icons/GitHubIcon.astro";
 import MailIcon from "../icons/MailIcon.astro";
+import ProjectIcon from "../icons/ProjectIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import WorkIcon from "../icons/WorkIcon.astro";
 ---
 
-<Layout title="Portfolio Javier Mejia - Desarrollador Móvil y Web", description="Contacta a Javier Mejia para cotizar y ver una posible solución a tu empresa.">
-  <main>
-    <Container class="py-28 pb-20">
+<Layout 
+  title="Portfolio Javier Mejia - Desarrollador Móvil y Web", 
+  description="Contactame para un posible desarrollo y cotización">
+  <main class="px-2">
+    <Container id="about" class="py-28 pb-20">
       <h1
-        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
       >
         <img
           class="rounded-full size-12"
@@ -27,11 +32,11 @@ import WorkIcon from "../icons/WorkIcon.astro";
           href="https://www.linkedin.com/in/javier-mejia-751b62231"
           target="_blank"
           rel="noopener"
-          class="flex justify-center items-center"
+          class="flex justify-center items-center hover:scale-105 transition"
           ><Badge>Disponible para trabajar</Badge></a
         >
       </h1>
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 sm:px-20 lg:px-0">
         <span class="opacity-80 text-blue-300">
           Desarrollador Móvil y Web 📱🌐</span
         > dedicado a la creación de aplicaciones y soluciones para tu empresa. Guanajuato,
@@ -42,7 +47,7 @@ import WorkIcon from "../icons/WorkIcon.astro";
           Android 📲</span
         > e iOS 🍏.
       </h2>
-      <nav class="flex gap-x-4 mt-6">
+      <nav class="flex gap-4 mt-6 flex-wrap sm:px-20 lg:px-0">
         <SocialPill href="https://www.linkedin.com/in/javier-mejia-751b62231">
           <LinkedInIcon class="size-6"/>
           LinkdIn
@@ -51,17 +56,25 @@ import WorkIcon from "../icons/WorkIcon.astro";
           <GitHubIcon class="size-6"/>
           GitHub
         </SocialPill>
-        <SocialPill href="https://github.com/javiermh20">
+        <SocialPill href="mailto:javiermejiah20@gmail.com">
           <MailIcon class="size-6"/>
           javiermejiah20@gmail.com
         </SocialPill>
       </nav>
     </Container>
 
-    <Container id="experience">
+    <Container id="experience" class="pb-4 sm:px-20 lg:px-0">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
         <WorkIcon class="size-7"/> Experiencia laboral</h2>
       <Experience />
     </Container>
+    
+    <Container id="projects" class="pb-2 sm:px-20 lg:px-0">
+      <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
+        <ProjectIcon class="size-7"/> Proyectos</h2>
+      <Projects />
+    </Container>
+
+    <Footer />
   </main>
 </Layout>

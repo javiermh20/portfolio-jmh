@@ -1,0 +1,25 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+    link: string;
+    image: string;
+    tags: string[];
+}
+
+const { title, description, link, image, tags } = Astro.props as Props;
+---
+
+<a href={link} class="flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-2xl border-gray-700 bg-white/5 hover:bg-white/10 hover:scale-105">
+    <img class="object-cover w-full h-48 md:h-full md:w-48 lg:h-full lg:w-64 rounded-t-lg md:ml-2 md:rounded-lg" src={image} alt={title}>
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{title}</h5>
+        <p class="mb-3 font-normal text-gray-400">{description}</p>
+        <div class="flex flex-wrap gap-2">
+            {
+                tags.map((tag: string) => (
+                    <span class="px-2 py-1 text-sm font-medium rounded-lg bg-blue-400  text-white">{tag}</span>
+                ))
+            }
+    </div>
+</a>
