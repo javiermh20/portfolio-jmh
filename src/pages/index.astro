@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-import Container from "../components/Container.astro";
 import Caurosel from "../components/Caurosel.astro";
+import Container from "../components/Container.astro";
+import DownloadIcon from "../icons/DownloadIcon.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
@@ -18,7 +19,7 @@ import WorkIcon from "../icons/WorkIcon.astro";
   title="Portfolio Javier Mejia - Desarrollador Móvil y Web", 
   description="Contactame para un posible desarrollo y cotización">
   <main class="px-2">
-    <Container id="about" class="py-28 pb-20">
+    <Container id="about" class="py-20 sm:px-20 lg:px-6">
       <h1
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
       >
@@ -37,18 +38,22 @@ import WorkIcon from "../icons/WorkIcon.astro";
           ><Badge>Disponible para trabajar</Badge></a
         >
       </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 sm:px-20 lg:px-0">
+      <h2 class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 lg:px-0">
         <span class="opacity-80 text-blue-300">
           Desarrollador Móvil y Web 📱🌐</span
-        > dedicado a la creación de aplicaciones y soluciones para tu empresa. Guanajuato,
-        México, me especializo en desarrollar aplicaciones móviles multiplataforma
+        > dedicado a la creación de sistemas y soluciones para tu empresa. Desde Guanajuato,
+        México. Me especializo en desarrollar aplicaciones móviles multiplataforma
         con Flutter 🚀, así como aplicaciones nativas para <span
           class="opacity-80 text-green-300"
         >
           Android 📲</span
         > e iOS 🍏.
       </h2>
-      <nav class="flex gap-4 mt-6 flex-wrap sm:px-20 lg:px-0">
+      <nav class="flex gap-4 mt-6 flex-wrap items-center">
+        <SocialPill href="/files/cv_javier_mejia.pdf" download="cv_javier_mejia.pdf">
+          <DownloadIcon class="size-6"/>
+          Descargar Curriculum
+        </SocialPill>
         <SocialPill href="https://www.linkedin.com/in/javier-mejia-751b62231">
           <LinkedInIcon class="size-6"/>
           LinkdIn

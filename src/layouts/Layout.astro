@@ -14,7 +14,7 @@ const { title, description } = Astro.props
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{description}">
+    <meta name="description" content={description}>
     <title>{title}</title>
     <link rel="icon" href="/public/favicon.svg" type="image/x-icon">
 </head>
@@ -30,6 +30,12 @@ const { title, description } = Astro.props
         color-scheme: light dark;
     }
 
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
     html {
         font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
@@ -41,6 +47,8 @@ const { title, description } = Astro.props
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        overflow-x: hidden;
+        margin: 0;
     }
 
     @media (prefers-reduce-motion: reduce) {
