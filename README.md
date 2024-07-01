@@ -1,47 +1,103 @@
-# Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
+# Portfolio de Javier Mejia
+
+¡Bienvenido a mi portfolio de desarrollador móvil y web! Este proyecto está construido con [Astro](https://astro.build/), un framework moderno para construir sitios web rápidos y optimizados. Aquí podrás conocer más sobre mi experiencia, proyectos y cómo contactarme.
+
+## 🌟 Características
+
+- **Desarrollo Móvil y Web:** Información sobre mi experiencia y habilidades en el desarrollo de aplicaciones móviles y web.
+- **Proyectos Destacados:** Una sección dedicada a mis proyectos más importantes.
+- **Experiencia Laboral:** Un resumen de mi experiencia profesional en la industria tecnológica.
+- **Descarga de CV:** Opción para descargar mi currículum en formato PDF.
+- **Contacto:** Enlaces directos a mis perfiles de LinkedIn y GitHub, así como mi correo electrónico para contacto profesional.
+
+## 🚀 Tecnologías Utilizadas
+
+- **Astro:** Framework principal para la construcción del sitio.
+- **HTML & CSS:** Estructura y estilos del sitio.
+- **JavaScript:** Funcionalidades interactivas.
+- **Icons & Badges:** Elementos visuales personalizados.
+
+## 📂 Estructura del Proyecto
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
+.
+├── public
+│   ├── files
+│   │   └── cv_javier_mejia.pdf
+│   ├── images
+│   │   └── javier.jpg
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── Badge.astro
+│   │   ├── Caurosel.astro
+│   │   ├── Container.astro
+│   │   ├── Experience.astro
+│   │   ├── Footer.astro
+│   │   ├── Projects.astro
+│   │   ├── SocialPill.astro
+│   │   └── ...
+│   ├── icons
+│   │   ├── DownloadIcon.astro
+│   │   ├── GitHubIcon.astro
+│   │   ├── LinkedInIcon.astro
+│   │   ├── MailIcon.astro
+│   │   ├── ProjectIcon.astro
+│   │   ├── WorkIcon.astro
+│   │   └── ...
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
 │       └── index.astro
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🌐 Cómo Empezar
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Para correr este proyecto localmente, sigue estos pasos:
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. **Clonar el repositorio:**
 
-## 🧞 Commands
+   ```bash
+   git clone https://github.com/tu-usuario/portfolio-astro.git
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Instalar dependencias:**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+   ```bash
+   cd portfolio-astro
+   npm install
+   ```
 
-## 👀 Want to learn more?
+3. **Correr el servidor de desarrollo:**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+   ```bash
+   npm run dev
+   ```
+
+4. **Abrir el navegador:**
+   
+   Visita `http://localhost:3000` para ver tu portfolio en acción.
+
+## 🛠️ Personalización
+
+Puedes personalizar este proyecto modificando los archivos en la carpeta `src`. Aquí hay algunas sugerencias:
+
+- **Actualizar información personal:** Modifica `index.astro` con tu información.
+- **Añadir nuevos proyectos:** Actualiza el componente `Projects.astro` para incluir tus últimos proyectos.
+- **Modificar estilos:** Cambia los estilos en los archivos `.astro` según tus preferencias.
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Puedes ver más detalles en el archivo [LICENSE](LICENSE).
+
+## 🤝 Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+
+- **LinkedIn:** [Javier Mejia](https://www.linkedin.com/in/javier-mejia-751b62231)
+- **GitHub:** [javiermh20](https://github.com/javiermh20)
+- **Email:** [javiermejiah20@gmail.com](mailto:javiermejiah20@gmail.com)
+
+¡Gracias por visitar mi portfolio!
