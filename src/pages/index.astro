@@ -16,12 +16,13 @@ import WorkIcon from "../icons/WorkIcon.astro";
 ---
 
 <Layout 
+  {...Astro.props}
   title="Portfolio Javier Mejia - Desarrollador Móvil y Web", 
   description="Contactame para un posible desarrollo y cotización">
   <main class="px-2">
     <Container id="about" class="py-20 sm:px-20 lg:px-6">
       <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+        class="dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
       >
         <img
           class="rounded-full size-12"
@@ -39,12 +40,12 @@ import WorkIcon from "../icons/WorkIcon.astro";
         >
       </h1>
       <h2 class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 lg:px-0">
-        <span class="opacity-80 text-blue-300">
+        <span class="opacity-80 text-blue-400">
           Desarrollador Móvil y Web 📱🌐</span
         > dedicado a la creación de sistemas y soluciones para tu empresa. Desde Guanajuato,
         México. Me especializo en desarrollar aplicaciones móviles multiplataforma
         con Flutter 🚀, así como aplicaciones nativas para <span
-          class="opacity-80 text-green-300"
+          class="opacity-80 text-green-400"
         >
           Android 📲</span
         > e iOS 🍏.
