@@ -13,6 +13,8 @@ import MailIcon from "../icons/MailIcon.astro";
 import ProjectIcon from "../icons/ProjectIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import WorkIcon from "../icons/WorkIcon.astro";
+import CertificationIcon from "../icons/CertificationIcon.astro";
+import Certifications from "../components/Certifications.astro";
 ---
 
 <Layout 
@@ -73,11 +75,17 @@ import WorkIcon from "../icons/WorkIcon.astro";
     <Container class="mb-20">
       <Caurosel />
     </Container>
-
+    
     <Container id="experience" class="pb-4 sm:px-20 lg:px-0">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
         <WorkIcon class="size-7"/> Experiencia laboral</h2>
       <Experience />
+    </Container>
+
+    <Container id="certifications" class="pb-2 sm:px-20 lg:px-0">
+      <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
+        <CertificationIcon class="size-7"/> Educación y Certificaciones</h2>
+      <Certifications />
     </Container>
     
     <Container id="projects" class="pb-2 sm:px-20 lg:px-0">
@@ -85,6 +93,8 @@ import WorkIcon from "../icons/WorkIcon.astro";
         <ProjectIcon class="size-7"/> Proyectos</h2>
       <Projects />
     </Container>
+
+    
 
     <Footer />
   </main>
