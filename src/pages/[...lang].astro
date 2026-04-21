@@ -1,4 +1,11 @@
 ---
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: "en" } },
+  ];
+}
+
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Caurosel from "../components/Caurosel.astro";
@@ -15,58 +22,74 @@ import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import WorkIcon from "../icons/WorkIcon.astro";
 import CertificationIcon from "../icons/CertificationIcon.astro";
 import Certifications from "../components/Certifications.astro";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Layout 
-  {...Astro.props}
-  title="Portfolio Javier Mejia - Desarrollador Móvil y Web", 
-  description="Contactame para un posible desarrollo y cotización">
+<Layout title={t("layout.title")} description={t("layout.description")}>
+  <script is:inline>
+    if (window.location.pathname === "/") {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith("en")) {
+        window.location.href = "/en/";
+      }
+    }
+  </script>
   <main class="px-2">
     <Container id="about" class="py-20 sm:px-20 lg:px-6">
       <h1
         class="dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
       >
         <img
-          class="rounded-full size-12"
-          src="/images/javier.jpg"
-          alt="javiermh photo"
+          class="rounded-full size-20 object-cover"
+          src="/images/profile.jpg"
+          alt="Profile photo"
         />
 
-        Hey, soy Javier Mejia
+        {t("hero.title")}
         <a
           href="https://www.linkedin.com/in/javier-mejia-751b62231"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center hover:scale-105 transition"
-          ><Badge>Disponible para trabajar</Badge></a
+          ><Badge>{t("hero.badge")}</Badge></a
         >
       </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 lg:px-0">
-        <span class="opacity-80 text-blue-400">
-          Desarrollador Móvil y Web 📱🌐</span
-        > dedicado a la creación de sistemas y soluciones para tu empresa. Desde Guanajuato,
-        México. Me especializo en desarrollar aplicaciones móviles multiplataforma
-        con Flutter 🚀, así como aplicaciones nativas para <span
-          class="opacity-80 text-green-400"
+      <h2
+        class="text-xl lg:text-2xl text-wrap justify-center items-center gap-x-4 lg:px-0"
+      >
+        <span class="opacity-80 text-blue-400"> {t("hero.description_1")}</span
         >
-          Android 📲</span
-        > e iOS 🍏.
+        {t("hero.description_2")}
+        <span class="opacity-80 text-green-400"> {t("hero.description_3")}</span
+        >
+        {t("hero.description_4")}
       </h2>
       <nav class="flex gap-4 mt-6 flex-wrap items-center">
-        <SocialPill href="/files/cv_javiermejia.pdf" download="cv_javier_mejia.pdf">
-          <DownloadIcon class="size-6"/>
-          Descargar Curriculum
+        <SocialPill
+          href={lang === "en"
+            ? "/files/CV_JAVIER_MEJIA_EN.pdf"
+            : "/files/CV_JAVIER_MEJIA_ES.pdf"}
+          download={lang === "en"
+            ? "CV_JAVIER_MEJIA_EN.pdf"
+            : "CV_JAVIER_MEJIA_ES.pdf"}
+        >
+          <DownloadIcon class="size-6" />
+          {t("hero.cv")}
         </SocialPill>
         <SocialPill href="https://www.linkedin.com/in/javier-mejia-751b62231">
-          <LinkedInIcon class="size-6"/>
+          <LinkedInIcon class="size-6" />
           LinkdIn
         </SocialPill>
         <SocialPill href="https://github.com/javiermh20">
-          <GitHubIcon class="size-6"/>
+          <GitHubIcon class="size-6" />
           GitHub
         </SocialPill>
         <SocialPill href="mailto:javiermejiah20@gmail.com">
-          <MailIcon class="size-6"/>
+          <MailIcon class="size-6" />
           javiermejiah20@gmail.com
         </SocialPill>
       </nav>
@@ -75,26 +98,30 @@ import Certifications from "../components/Certifications.astro";
     <Container class="mb-20">
       <Caurosel />
     </Container>
-    
+
     <Container id="experience" class="pb-4 sm:px-20 lg:px-0">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
-        <WorkIcon class="size-7"/> Experiencia laboral</h2>
+        <WorkIcon class="size-7" />
+        {t("sections.experience")}
+      </h2>
       <Experience />
     </Container>
 
     <Container id="certifications" class="pb-2 sm:px-20 lg:px-0">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
-        <CertificationIcon class="size-7"/> Educación y Certificaciones</h2>
+        <CertificationIcon class="size-7" />
+        {t("sections.certifications")}
+      </h2>
       <Certifications />
     </Container>
-    
+
     <Container id="projects" class="pb-2 sm:px-20 lg:px-0">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
-        <ProjectIcon class="size-7"/> Proyectos</h2>
+        <ProjectIcon class="size-7" />
+        {t("sections.projects")}
+      </h2>
       <Projects />
     </Container>
-
-    
 
     <Footer />
   </main>

@@ -1,0 +1,31 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div class="flex gap-x-2 items-center ml-4">
+  {
+    Object.entries(languages).map(([code, label]) => {
+      // Determine the target URL
+      // If code is defaultLang ('es'), it should go to '/'
+      // If code is 'en', it should go to '/en/'
+      const targetUrl = code === "es" ? "/" : `/${code}/`;
+
+      return (
+        <a
+          href={targetUrl}
+          class:list={[
+            "text-xs font-bold hover:text-white transition-all uppercase px-2 py-1 rounded-md border",
+            lang === code
+              ? "bg-white/20 text-white border-white/40"
+              : "text-gray-400 border-transparent hover:bg-white/5",
+          ]}
+        >
+          {code}
+        </a>
+      );
+    })
+  }
+</div>

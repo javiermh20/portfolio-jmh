@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "certifications": "Certificaciones"
+  },
+  "hero": {
+    "title": "Hey, soy Javier Mejia",
+    "badge": "Disponible para trabajar",
+    "description_1": "Desarrollador Móvil y Web 📱🌐",
+    "description_2": "dedicado a la creación de sistemas y soluciones para tu empresa. Desde Guanajuato, México. Me especializo en desarrollar aplicaciones móviles multiplataforma con Flutter 🚀, así como aplicaciones nativas para",
+    "description_3": "Android 📲",
+    "description_4": "e iOS 🍏.",
+    "cv": "Descargar Curriculum"
+  },
+  "layout": {
+    "title": "Portfolio Javier Mejia - Desarrollador Móvil y Web",
+    "description": "Contactame para un posible desarrollo y cotización"
+  },
+  "footer": {
+    "rights": "todos los derechos reservados"
+  },
+  "sections": {
+    "experience": "Experiencia laboral",
+    "projects": "Proyectos",
+    "certifications": "Educación y Certificaciones"
+  },
+  "experience": [
+    {
+      "date": "Febrero 2025 - Actualidad",
+      "title": "Mobile Developer - SISTEMAS BLACKCORE DE MÉXICO C.V.",
+      "description": "Desarrollo de apps móviles nativas/multiplataforma (Android/iOS) para clientes internacionales. Integración de IA (Google Gemini y Open AI Api) en funcionalidades clave + gestión de infraestructura en la nube (AWS/Firebase) para equipos distribuidos.",
+      "link": "https://play.google.com/store/apps/details?id=mx.com.blackcore.saxgo"
+    },
+    {
+      "date": "Julio 2024 - Diciembre 2024",
+      "title": "Mobile Developer Freelance - Trece Software",
+      "description": "Desarrollo de varias aplicaciones móviles (iOS/Android) para clientes en Norteamérica. Realicé el despliegue completo en las tiendas oficiales (App Store y Google Play) e implementé soluciones en Firebase para autenticación de usuarios y gestión de bases de datos en la nube, garantizando escalabilidad y seguridad."
+    },
+    {
+      "date": "Diciembre 2023 - Julio 2024",
+      "title": "Mobile Developer - DISOFTEC S.A. DE C.V.",
+      "description": "Desarrollo de aplicaciones móviles enfocadas en la seguridad empresarial (control de accesos, carriers, empleados). Implementación de Firebase para autenticación y notificaciones, desarrollo de backend en Node.js y Express.js, y gestión de bases de datos en SQL. Despliegue de aplicaciones en App Store y Google Play Store.",
+      "link": "https://play.google.com/store/apps/details?id=com.dapis.ctapp.mx.tab"
+    },
+    {
+      "date": "Mayo 2023 - Julio 2023",
+      "title": "Java Developer - CASTORES S.A. DE C.V.",
+      "description": "Desarrollo en Java EE8 con Spring Boot, APIs REST y gestión de bases de datos SQL. Frontend web implementado mejoras para interfaces dinámicas. Enfoque principal en un sistema de nómina interno para carriers."
+    }
+  ],
+  "projects": [
+    {
+      "title": "MiCasa",
+      "description": "Aplicación del sector inmobiliario de España, creada con la tecnología de React Native, integrando funcionalidades especificas para el usuario final y el administración de las propiedades privadas.",
+      "image": "/images/projects/micasa.png",
+      "link": "https://play.google.com/store/apps/details?id=com.accumin.tinsadev.android&hl=es",
+      "tags": ["Android", "IOS", "React Native", "IA", "Gemini", "Open AI"]
+    },
+    {
+      "title": "SAX GO",
+      "description": "Aplicación creada con Xcode 15 para interactuar con sistemas internos, integre un sistema de inteligencia artificial con distintas APIs como Gemini y Open AI para la optimización en el sistema.",
+      "image": "/images/projects/saxgo.png",
+      "link": "https://play.google.com/store/apps/details?id=mx.com.blackcore.saxgo",
+      "tags": ["IOS", "Swift", "Xcode", "IA", "Gemini", "Open AI"]
+    },
+    {
+      "title": "CTTApp TAB",
+      "description": "Aplicación en la que utiizó la libreria mlkit para reconocimiento facial de google, para aplicaciones móviles Android e IOS con Flutter, gestion de seguridad de las empresas",
+      "image": "/images/projects/ctapp.png",
+      "link": "https://github.com/javiermh20/reconocimiento_facial_imagenes",
+      "tags": ["Flutter", "Mobile", "Face Recognition", "Security"]
+    },
+    {
+      "title": "Paintza",
+      "description": "Aplicación para cliente americano, en la cual puedes agendar visitas de constructoras con clientes en Georgia, puedes reportar el desarrollo de la obra y calcular prespuestos junto con los materiales y mano de obra.",
+      "image": "/images/projects/paintza.png",
+      "link": "https://github.com/javiermh20/",
+      "tags": ["IOS", "Swift", "AR", "Xcode", "Construction"]
+    },
+    {
+      "title": "Venom",
+      "description": "Aplicación para una farmacéutica donde muestra su catalogo de suplementos alimenticios y nuevas ampolletas de vitaminas, muestra sus efectos y sugerencia de aplicación dentro de la app",
+      "link": "https://github.com/javiermh20/",
+      "image": "/images/projects/venom.svg",
+      "tags": ["IOS", "Swift", "Mobile", "Xcode", "Pharma"]
+    },
+    {
+      "title": "AR Minecraft",
+      "description": "Aplicación creada con Xcode 15 de realidad aumentada en la que se puede interactuar en un mundo inmersivo de Minecraft combinado con la vida real, utilizando ARKit y SceneKit.",
+      "image": "/images/projects/ar-minecraft.jpg",
+      "link": "https://www.instagram.com/reel/C8wMT47OSmyqJxgfLdmGRkeTaX5bti40Qdnx_g0/?igsh=MW56cGttbmtzODR2Mw%3D%3D",
+      "tags": ["IOS", "Swift", "AR", "Xcode", "Minecraft"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Ingeniero de Software - Universidad La Salle Bajío",
+      "description": "un gran logro al concluir y recibir mi constancia de conclusión satisfactoria de la Ingeniería en Software y Sistemas Computacionales 🎓 en la Universidad La Salle Bajío. Este viaje ha sido una experiencia enriquecedora, llena de valiosas enseñanzas y el constante apoyo de mis profesores y compañeros. ¡Gracias a todos los que formaron parte de este recorrido!",
+      "image": "/images/achievements/salle.jpeg",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7214104467963609088//",
+      "tags": ["Engeener", "Software", "Graduate", "LaSallista"]
+    },
+    {
+      "title": "REACT JS - UNAM",
+      "description": "Me complace compartir con ustedes que he obtenido el certificado en Desarrollo Web con React, otorgado por la UNAM en colaboración con el IECA, una institución clave para el desarrollo tecnológico en el estado de Guanajuato. 🎓💻 ¡Estoy entusiasmado de aplicar estas habilidades en futuros proyectos y seguir creciendo en el mundo del desarrollo web! 🚀",
+      "image": "/images/achievements/unam.png",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7265503298114265088/",
+      "tags": ["REACT", "WEB", "TypeScript", "UNAM"]
+    },
+    {
+      "title": "Fundamentos de Python - Santander Open Academy",
+      "description": "Estoy emocionado de compartir que he completado el curso de Fundamentos de Python en Santander Open Academy. Esta experiencia me ha permitido fortalecer mis conocimientos en este lenguaje de programación, y me siento motivado para aplicar lo aprendido en nuevas oportunidades laborales relacionadas con Python.",
+      "image": "/images/achievements/santander.jpg",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7282164359382908929/",
+      "tags": ["Python", "Santander", "Open Academy"]
+    }
+  ]
+}

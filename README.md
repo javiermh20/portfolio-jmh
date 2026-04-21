@@ -24,7 +24,7 @@
 .
 ├── public
 │   ├── files
-│   │   └── cv_javier_mejia.pdf
+│   │   └── CV_JAVIER_MEJIA_ES.pdf
 │   ├── images
 │   │   └── javier.jpg
 │   └── ...

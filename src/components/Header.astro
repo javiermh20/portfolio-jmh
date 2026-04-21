@@ -1,38 +1,76 @@
-<header {...Astro.props} class=" hidden md:flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
-  <nav>
+---
+import LanguagePicker from "./LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<header
+  {...Astro.props}
+  class="hidden md:flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto"
+>
+  <nav class="flex items-center">
     <ul class="flex flex-row gap-x-10 opacity-80">
       <li>
-        <a href="#top" class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300">
-          Inicio
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        <a
+          href="#top"
+          class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+        >
+          {t("nav.home")}
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+          ></span>
         </a>
       </li>
       <li>
-        <a href="#experience" class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300">
-          Experiencia
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        <a
+          href="#experience"
+          class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+        >
+          {t("nav.experience")}
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+          ></span>
         </a>
       </li>
       <li>
-        <a href="#certifications" class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300">
-          Certificaciones
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        <a
+          href="#certifications"
+          class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+        >
+          {t("nav.certifications")}
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+          ></span>
         </a>
       </li>
       <li>
-        <a href="#projects" class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300">
-          Proyectos
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        <a
+          href="#projects"
+          class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+        >
+          {t("nav.projects")}
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+          ></span>
         </a>
       </li>
-      
+
       <li>
-        <a href="#about" class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300">
-          Sobre mí
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        <a
+          href="#about"
+          class="relative inline-block py-2 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+        >
+          {t("nav.about")}
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+          ></span>
         </a>
       </li>
     </ul>
+
+    <LanguagePicker />
   </nav>
 </header>
 

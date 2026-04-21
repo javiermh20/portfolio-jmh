@@ -1,38 +1,18 @@
 ---
-import ExperienceItem from './ExperienceItem.astro'
-const EXPERIENCE = [
-  {
-    date: 'Febrero 2025 - Junio 2025',
-    title: 'Mobile Developer - SISTEMAS BLACKCORE DE MÉXICO C.V.',
-    description: 'Desarrollo de apps móviles nativas/multiplataforma (Android/iOS) para clientes internacionales. Integración de IA (Google Gemini y Open AI Api) en funcionalidades clave + gestión de infraestructura en la nube (AWS/Firebase) para equipos distribuidos.',
-    link: 'https://play.google.com/store/apps/details?id=mx.com.blackcore.saxgo'
-  },
-  {
-    date: 'Julio 2024 - Diciembre 2025',
-    title: 'Mobile Developer Freelance - Trece Software',
-    description: 'Desarrollo de varias aplicaciones móviles (iOS/Android) para clientes en Norteamérica. Realicé el despliegue completo en las tiendas oficiales (App Store y Google Play) e implementé soluciones en Firebase para autenticación de usuarios y gestión de bases de datos en la nube, garantizando escalabilidad y seguridad.',
-  },
-  {
-    date: 'Diciembre 2023 - Julio 2024',
-    title: 'Mobile Developer - DISOFTEC S.A. DE C.V.',
-    description: 'Desarrollo de aplicaciones móviles enfocadas en la seguridad empresarial (control de accesos, carriers, empleados). Implementación de Firebase para autenticación y notificaciones, desarrollo de backend en Node.js y Express.js, y gestión de bases de datos en SQL. Despliegue de aplicaciones en App Store y Google Play Store.',
-    link: 'https://play.google.com/store/apps/details?id=com.dapis.ctapp.mx.tab'
-  },
-  {
-    date: 'Mayo 2023 - Julio 2023',
-    title: 'Java Developer - CASTORES S.A. DE C.V.',
-    description: 'Desarrollo en Java EE8 con Spring Boot, APIs REST y gestión de bases de datos SQL. Frontend web implementado mejoras para interfaces dinámicas. Enfoque principal en un sistema de nómina interno para carriers.',
-  },
-];
+import ExperienceItem from "./ExperienceItem.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const EXPERIENCE = t("experience");
 ---
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">
-    {
-        EXPERIENCE.map(experience => (
-            <li class="mb-10 ms-4">
-                <ExperienceItem {...experience} />
-            </li>    
-        ))
-    }                  
+  {
+    EXPERIENCE.map((experience: any) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
 </ol>
-

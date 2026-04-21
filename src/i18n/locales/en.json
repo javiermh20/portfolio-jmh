@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "about": "About me",
+    "certifications": "Certifications"
+  },
+  "hero": {
+    "title": "Hey, I'm Javier Mejia",
+    "badge": "Available for work",
+    "description_1": "Mobile and Web Developer 📱🌐",
+    "description_2": "dedicated to creating systems and solutions for your company. From Guanajuato, Mexico. I specialize in developing cross-platform mobile applications with Flutter 🚀, as well as native applications for",
+    "description_3": "Android 📲",
+    "description_4": "and iOS 🍏.",
+    "cv": "Download Resume"
+  },
+  "layout": {
+    "title": "Javier Mejia Portfolio - Mobile and Web Developer",
+    "description": "Contact me for development and quotes"
+  },
+  "footer": {
+    "rights": "all rights reserved"
+  },
+  "sections": {
+    "experience": "Work Experience",
+    "projects": "Projects",
+    "certifications": "Education & Certifications"
+  },
+  "experience": [
+    {
+      "date": "February 2025 - Present",
+      "title": "Mobile Developer - SISTEMAS BLACKCORE DE MÉXICO C.V.",
+      "description": "Development of native/cross-platform mobile apps (Android/iOS) for international clients. Integration of AI (Google Gemini and Open AI Api) in key functionalities + cloud infrastructure management (AWS/Firebase) for distributed teams.",
+      "link": "https://play.google.com/store/apps/details?id=mx.com.blackcore.saxgo"
+    },
+    {
+      "date": "July 2024 - December 2024",
+      "title": "Freelance Mobile Developer - Trece Software",
+      "description": "Development of several mobile applications (iOS/Android) for clients in North America. I performed the full deployment in official stores (App Store and Google Play) and implemented solutions in Firebase for user authentication and cloud database management, ensuring scalability and security."
+    },
+    {
+      "date": "December 2023 - July 2024",
+      "title": "Mobile Developer - DISOFTEC S.A. DE C.V.",
+      "description": "Development of mobile applications focused on business security (access control, carriers, employees). Implementation of Firebase for authentication and notifications, backend development in Node.js and Express.js, and SQL database management. Deployment of applications in App Store and Google Play Store.",
+      "link": "https://play.google.com/store/apps/details?id=com.dapis.ctapp.mx.tab"
+    },
+    {
+      "date": "May 2023 - July 2023",
+      "title": "Java Developer - CASTORES S.A. DE C.V.",
+      "description": "Development in Java EE8 with Spring Boot, REST APIs, and SQL database management. Frontend web implementation of improvements for dynamic interfaces. Primary focus on an internal payroll system for carriers."
+    }
+  ],
+  "projects": [
+    {
+      "title": "MiCasa",
+      "description": "Real estate application in Spain, created with React Native technology, integrating specific functionalities for the end user and private property management.",
+      "image": "/images/projects/micasa.png",
+      "link": "https://play.google.com/store/apps/details?id=com.accumin.tinsadev.android&hl=es",
+      "tags": ["Android", "IOS", "React Native", "IA", "Gemini", "Open AI"]
+    },
+    {
+      "title": "SAX GO",
+      "description": "Application created with Xcode 15 to interact with internal systems, integrating an artificial intelligence system with various APIs such as Gemini and Open AI for system optimization.",
+      "image": "/images/projects/saxgo.png",
+      "link": "https://play.google.com/store/apps/details?id=mx.com.blackcore.saxgo",
+      "tags": ["IOS", "Swift", "Xcode", "IA", "Gemini", "Open AI"]
+    },
+    {
+      "title": "CTTApp TAB",
+      "description": "Application using the google mlkit library for facial recognition, for Android and iOS mobile applications with Flutter, corporate security management.",
+      "image": "/images/projects/ctapp.png",
+      "link": "https://github.com/javiermh20/reconocimiento_facial_imagenes",
+      "tags": ["Flutter", "Mobile", "Face Recognition", "Security"]
+    },
+    {
+      "title": "Paintza",
+      "description": "Application for an American client, where you can schedule visits from construction companies with clients in Georgia, report project development, and calculate budgets along with materials and labor.",
+      "image": "/images/projects/paintza.png",
+      "link": "https://github.com/javiermh20/",
+      "tags": ["IOS", "Swift", "AR", "Xcode", "Construction"]
+    },
+    {
+      "title": "Venom",
+      "description": "Application for a pharmaceutical company showing its catalog of food supplements and new vitamin ampoules, showing their effects and application suggestions within the app.",
+      "link": "https://github.com/javiermh20/",
+      "image": "/images/projects/venom.svg",
+      "tags": ["IOS", "Swift", "Mobile", "Xcode", "Pharma"]
+    },
+    {
+      "title": "AR Minecraft",
+      "description": "Augmented reality application created with Xcode 15 where you can interact in an immersive Minecraft world combined with real life, using ARKit and SceneKit.",
+      "image": "/images/projects/ar-minecraft.jpg",
+      "link": "https://www.instagram.com/reel/C8wMT47OSmyqJxgfLdmGRkeTaX5bti40Qdnx_g0/?igsh=MW56cGttbmtzODR2Mw%3D%3D",
+      "tags": ["IOS", "Swift", "AR", "Xcode", "Minecraft"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Software Engineer - La Salle Bajío University",
+      "description": "A great achievement upon completing and receiving my certificate of satisfactory completion of Software and Computer Systems Engineering 🎓 at La Salle Bajío University. This journey has been an enriching experience, full of valuable lessons and the constant support of my professors and peers. Thank you to everyone who was part of this journey!",
+      "image": "/images/achievements/salle.jpeg",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7214104467963609088//",
+      "tags": ["Engineer", "Software", "Graduate", "LaSallista"]
+    },
+    {
+      "title": "REACT JS - UNAM",
+      "description": "I am pleased to share with you that I have obtained the Web Development with React certificate, awarded by UNAM in collaboration with IECA, a key institution for technological development in the state of Guanajuato. 🎓💻 I am excited to apply these skills in future projects and continue growing in the world of web development! 🚀",
+      "image": "/images/achievements/unam.png",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7265503298114265088/",
+      "tags": ["REACT", "WEB", "TypeScript", "UNAM"]
+    },
+    {
+      "title": "Python Fundamentals - Santander Open Academy",
+      "description": "I am excited to share that I have completed the Python Fundamentals course at Santander Open Academy. This experience has allowed me to strengthen my knowledge in this programming language, and I feel motivated to apply what I've learned in new job opportunities related to Python.",
+      "image": "/images/achievements/santander.jpg",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7282164359382908929/",
+      "tags": ["Python", "Santander", "Open Academy"]
+    }
+  ]
+}

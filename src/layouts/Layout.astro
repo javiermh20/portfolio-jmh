@@ -1,16 +1,19 @@
 ---
-import '@fontsource-variable/onest'
-import Header from '../components/Header.astro'
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+import { getLangFromUrl } from "../i18n/utils";
 
 interface Props {
-    title: string
-    description: string
+  title: string;
+  description: string;
 }
 
-const { title, description } = Astro.props
+const { title, description } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
-<!DOCTYPE html>
-<html lang="es">
+
+<!doctype html>
+<html lang={lang}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,33 +1,16 @@
 ---
-import CertificationItem from './CertificationItem.astro'
-const CERTIFICATIONS = [
-  {
-    title: 'Ingeniero de Software - Universidad La Salle Bajío',
-    description: 'un gran logro al concluir y recibir mi constancia de conclusión satisfactoria de la Ingeniería en Software y Sistemas Computacionales 🎓 en la Universidad La Salle Bajío. Este viaje ha sido una experiencia enriquecedora, llena de valiosas enseñanzas y el constante apoyo de mis profesores y compañeros. ¡Gracias a todos los que formaron parte de este recorrido!',
-    image: '/images/salle.jpeg',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7214104467963609088//',
-    tags: ['Engeener', 'Software', 'Graduate', 'LaSallista']
-  },
-  {
-    title: 'REACT JS - UNAM',
-    description: 'Me complace compartir con ustedes que he obtenido el certificado en Desarrollo Web con React, otorgado por la UNAM en colaboración con el IECA, una institución clave para el desarrollo tecnológico en el estado de Guanajuato. 🎓💻 ¡Estoy entusiasmado de aplicar estas habilidades en futuros proyectos y seguir creciendo en el mundo del desarrollo web! 🚀',
-    image: '/images/unam.png',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7265503298114265088/',
-    tags: ['REACT', 'WEB', 'TypeScript', 'UNAM']
-  },
-  {
-    title: 'Fundamentos de Python - Santander Open Academy',
-    description: 'Estoy emocionado de compartir que he completado el curso de Fundamentos de Python en Santander Open Academy. Esta experiencia me ha permitido fortalecer mis conocimientos en este lenguaje de programación, y me siento motivado para aplicar lo aprendido en nuevas oportunidades laborales relacionadas con Python.',
-    image: '/images/santander.jpg',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7282164359382908929/',
-    tags: ['Python', 'Santander', 'Open Academy']
-  },
-]
+import CertificationItem from "./CertificationItem.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const CERTIFICATIONS = t("certifications");
 ---
+
 {
-    CERTIFICATIONS.map(certification => (
-      <ul class="mb-10 ms-4">
-        <CertificationItem {...certification} />
-      </ul>
-    ))
+  CERTIFICATIONS.map((certification: any) => (
+    <ul class="mb-10 ms-4">
+      <CertificationItem {...certification} />
+    </ul>
+  ))
 }
